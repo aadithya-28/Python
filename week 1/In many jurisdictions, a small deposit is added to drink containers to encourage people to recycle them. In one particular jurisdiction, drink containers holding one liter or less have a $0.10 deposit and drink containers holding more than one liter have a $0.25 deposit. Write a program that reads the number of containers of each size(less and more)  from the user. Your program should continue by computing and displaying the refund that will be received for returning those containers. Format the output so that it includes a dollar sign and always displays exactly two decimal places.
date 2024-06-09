@@ -1,0 +1,4 @@
+less=int(input())
+more=int(input())
+ans=less*.1+more*.25
+print("Your total refund will be $%.2f."%ans)
