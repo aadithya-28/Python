@@ -1,0 +1,6 @@
+a=input()
+b=input()
+a=int(a)
+b=float(b)
+print(a,',',type(a),sep='')
+print(round(b,1),',',type(b),sep='')
