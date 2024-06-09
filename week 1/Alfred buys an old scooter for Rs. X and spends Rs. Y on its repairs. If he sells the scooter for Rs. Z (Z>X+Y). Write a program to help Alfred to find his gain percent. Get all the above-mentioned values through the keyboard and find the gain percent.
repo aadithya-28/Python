@@ -1,0 +1,6 @@
+x=int(input())
+y=int(input())
+z=int(input())
+cp=x+y
+ans=((z-cp)/cp)*100
+print("%.2f is the gain percent."%ans)
