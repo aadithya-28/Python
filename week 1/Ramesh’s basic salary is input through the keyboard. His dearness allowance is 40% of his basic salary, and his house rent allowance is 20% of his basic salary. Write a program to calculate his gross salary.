@@ -1,0 +1,5 @@
+sal=int(input())
+hr=sal*.2
+al=sal*.4
+gross_sal=sal+hr+al
+print(int(gross_sal))
