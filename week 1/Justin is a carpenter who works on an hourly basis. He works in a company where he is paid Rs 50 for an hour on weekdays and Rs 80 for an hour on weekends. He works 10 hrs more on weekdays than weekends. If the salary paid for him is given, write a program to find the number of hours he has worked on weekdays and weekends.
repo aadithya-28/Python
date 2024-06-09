@@ -1,0 +1,5 @@
+sal=int(input())
+we=abs(sal-500)/130
+wd=10+we
+print("weekdays %.2f"%wd)
+print("weekend %.2f"%we)
