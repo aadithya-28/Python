@@ -1,0 +1,21 @@
+a=input()
+s=[]
+alp=[]
+ans=[]
+k='0'
+for i in a:
+    if i in '@!#$%^&*~':
+        ans.append(i)
+    else:
+        ans.append(k)
+        alp.append(i)
+
+alp=alp[::-1]
+ind=0
+for i in ans:
+    if i=='0':
+        ans[ans.index(i)]=alp[ind]
+        ind+=1
+
+for i in ans:
+    print(i,end='')
