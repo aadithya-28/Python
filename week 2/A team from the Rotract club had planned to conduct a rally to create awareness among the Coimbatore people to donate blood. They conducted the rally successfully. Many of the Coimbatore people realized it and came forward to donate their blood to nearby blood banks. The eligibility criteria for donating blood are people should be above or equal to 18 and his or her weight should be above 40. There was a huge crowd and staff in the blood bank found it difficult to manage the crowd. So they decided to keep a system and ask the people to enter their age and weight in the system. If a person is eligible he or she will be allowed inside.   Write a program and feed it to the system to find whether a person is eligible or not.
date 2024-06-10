@@ -1,0 +1,4 @@
+age=int(input())
+weight=int(input())
+ans=(age>=18) and (weight>40)
+print(ans)
