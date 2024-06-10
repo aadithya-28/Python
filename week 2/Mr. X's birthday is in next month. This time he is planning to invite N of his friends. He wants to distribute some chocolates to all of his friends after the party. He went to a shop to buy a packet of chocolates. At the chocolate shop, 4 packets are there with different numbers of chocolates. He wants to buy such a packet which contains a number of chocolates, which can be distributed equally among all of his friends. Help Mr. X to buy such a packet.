@@ -1,0 +1,9 @@
+n=int(input())
+t=4
+while t!=0:
+    p=int(input())
+    if p%n==0:
+        print("True",end=' ')
+    else:
+        print("False", end=' ')
+    t-=1
