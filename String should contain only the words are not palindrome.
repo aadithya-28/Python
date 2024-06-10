@@ -1,0 +1,6 @@
+s=input().split()
+for i in s:
+    i=i.lower()
+    a=i[::-1]
+    if i != a:
+        print(i,end=' ')
