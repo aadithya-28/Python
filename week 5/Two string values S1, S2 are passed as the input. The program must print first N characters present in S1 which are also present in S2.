@@ -1,0 +1,11 @@
+s1=input()
+s2=input()
+n=int(input())
+present=[]
+while n>0:
+    for i in s1:
+        if i in s2 and i not in present :
+            print(i,end='')
+            present.append(i)
+            n-=1
+            break
