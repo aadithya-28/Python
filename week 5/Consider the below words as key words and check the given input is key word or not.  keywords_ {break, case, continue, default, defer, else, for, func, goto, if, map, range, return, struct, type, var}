@@ -1,0 +1,6 @@
+a={'break', 'case', 'continue', 'default', 'defer', 'else', 'for', 'func', 'goto', 'if', 'map', 'range', 'return', 'struct', 'type', 'var'}
+s1=input()
+if s1 in a:
+    print("%s is a keyword"%s1)
+else:
+    print("%s is not a keyword"%s1)
