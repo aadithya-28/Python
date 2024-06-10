@@ -1,0 +1,17 @@
+l=[]
+a=0
+for i in range(11):
+    a=input()
+    l.append(a)
+
+a=l.pop()
+print("ITEM to be inserted:"+a)
+print("After insertion array is:")
+for i in range(len(l)-1):
+    if l[i]<a and a<l[i+1]:
+        print(l[i])
+        print(a)
+    else:
+        print(l[i])
+
+print(l[-1])
