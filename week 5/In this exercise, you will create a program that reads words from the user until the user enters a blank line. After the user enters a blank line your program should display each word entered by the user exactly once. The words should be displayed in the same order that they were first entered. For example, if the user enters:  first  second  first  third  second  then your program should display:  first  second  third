@@ -1,0 +1,7 @@
+a=input()
+l=[]
+while(a.isalpha()):
+    if a not in l:
+        l.append(a)
+        print(a)
+    a=input()
