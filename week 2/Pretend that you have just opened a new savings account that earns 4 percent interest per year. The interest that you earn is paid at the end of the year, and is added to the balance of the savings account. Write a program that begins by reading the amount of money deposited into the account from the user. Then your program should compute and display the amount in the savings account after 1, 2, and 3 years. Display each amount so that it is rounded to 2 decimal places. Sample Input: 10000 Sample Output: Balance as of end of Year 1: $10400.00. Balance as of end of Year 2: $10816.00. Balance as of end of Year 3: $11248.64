@@ -1,0 +1,5 @@
+amt=int(input())
+
+for i in range(1,4):
+    amt+=(0.04*amt)
+    print("Balance as of end of Year %d: $%.2f."%(i , amt))
