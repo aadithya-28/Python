@@ -1,0 +1,26 @@
+a=input()
+
+if a=="January":
+    print("January has 31 days in it.")
+elif a=="February":
+    print("February has 28 or 29 days in it.")
+elif a=="March":
+    print("March has 31 days in it.")
+elif a=="April":
+    print("April has 30 days in it.")
+elif a=="May":
+    print("May has 31 days in it.")
+elif a=="June":
+    print("June has 30 days in it.")
+elif a=="July":
+    print("July has 31 days in it.")
+elif a=="August":
+    print("August has 31 days in it.")
+elif a=="September":
+    print("September has 30 days in it.")
+elif a=="October":
+    print("October has 31 days in it.")
+elif a=="November":
+    print("November has 30 days in it.")
+else:
+    print("December had 31 days in it.")
