@@ -1,0 +1,11 @@
+s1=input()
+l=list(s1)
+s2=input()
+for i in s2:
+    while True:
+        if i in l:
+            l.remove(i)
+        else:
+            break
+for i in l:
+    print(i,end='')
