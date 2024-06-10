@@ -1,0 +1,4 @@
+w = int(input())
+g = int(input())
+ans = w * 75 + g * 112
+print("The total weight of all these widgets and gizmos is %d grams."%ans)
