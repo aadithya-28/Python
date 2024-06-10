@@ -1,0 +1,9 @@
+n=int(input())
+ans=0
+if n<0:
+    n=-n
+if n>9:
+    ans=(n//10)%10
+else:
+    ans=-1
+print(ans)
