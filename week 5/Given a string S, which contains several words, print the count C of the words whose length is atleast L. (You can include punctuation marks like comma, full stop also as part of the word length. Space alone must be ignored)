@@ -1,0 +1,7 @@
+s=input().split()
+c=int(input())
+count=0
+for i in s:
+    if len(i)>=c:
+        count+=1
+print(count)
