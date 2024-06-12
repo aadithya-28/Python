@@ -1,0 +1,8 @@
+#palindrome
+s=input()
+s=s.lower()
+z=s.split()
+
+for i in z:
+    if i!=i[::-1]:
+        print(i,end=' ')
