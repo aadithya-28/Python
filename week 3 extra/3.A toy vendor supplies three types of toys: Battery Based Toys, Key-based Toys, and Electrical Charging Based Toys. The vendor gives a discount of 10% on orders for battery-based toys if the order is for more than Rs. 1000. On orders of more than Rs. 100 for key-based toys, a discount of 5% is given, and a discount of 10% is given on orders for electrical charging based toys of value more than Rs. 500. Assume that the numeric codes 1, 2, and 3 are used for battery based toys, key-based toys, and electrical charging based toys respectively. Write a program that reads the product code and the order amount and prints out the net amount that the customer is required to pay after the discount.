@@ -1,0 +1,11 @@
+# product code
+c = int(input())
+n = float(input())
+a = n
+if (c == 1 and n > 1000):
+    a -= (0.10 * n)
+elif (c == 2 and n > 100):
+    a -= (0.05 * n)
+elif (c == 3 and n > 500):
+    a -= (0.10 * n)
+print(int(a))
