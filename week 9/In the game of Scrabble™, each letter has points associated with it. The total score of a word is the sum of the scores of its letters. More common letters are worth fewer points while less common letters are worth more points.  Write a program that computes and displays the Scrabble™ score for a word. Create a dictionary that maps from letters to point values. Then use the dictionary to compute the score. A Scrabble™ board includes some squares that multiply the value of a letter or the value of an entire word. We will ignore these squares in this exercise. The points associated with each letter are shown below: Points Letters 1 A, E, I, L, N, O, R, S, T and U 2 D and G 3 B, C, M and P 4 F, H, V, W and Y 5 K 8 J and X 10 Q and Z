@@ -1,0 +1,8 @@
+s=input()
+d={1:'AEILNORSTU',2:'DG',3:'BCM',4:'FHVWY',5:'K',8:'JX',10:'QZ'}
+s1=0
+for i in s:
+    for j in d.keys():
+        if i in d[j]:
+            s1=s1+j
+print(s,"is worth",s1,"points.")
