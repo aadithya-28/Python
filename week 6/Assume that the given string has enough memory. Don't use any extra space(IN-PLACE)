@@ -1,0 +1,15 @@
+s=input()
+n=len(s)
+#s1=''
+for i in range(0,n):
+    if s[i].isalpha()==True:
+        c=''
+        for j in range(i+1,n):
+           # print(s[j])
+            if s[j].isdigit()==True:
+                c=c+s[j]
+            if s[j].isalpha()==True:
+                break
+        #print(c)
+        s=s+s[i]*int(c)
+print(s[n:])
