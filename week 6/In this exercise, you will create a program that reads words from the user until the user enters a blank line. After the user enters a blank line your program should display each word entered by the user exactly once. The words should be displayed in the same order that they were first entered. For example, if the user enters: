@@ -1,0 +1,10 @@
+
+l=[]
+while True:
+    s=input()
+    if s=='\n' or s==' ':
+        break
+    if s not in l:
+        l.append(s)
+for i in l:
+    print(i)
