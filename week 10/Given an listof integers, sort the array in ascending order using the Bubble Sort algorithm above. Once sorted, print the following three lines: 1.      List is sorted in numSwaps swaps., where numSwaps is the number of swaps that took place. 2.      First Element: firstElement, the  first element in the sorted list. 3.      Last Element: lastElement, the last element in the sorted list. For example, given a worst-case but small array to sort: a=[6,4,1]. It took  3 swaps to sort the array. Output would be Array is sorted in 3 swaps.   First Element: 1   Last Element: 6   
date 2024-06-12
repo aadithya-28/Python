@@ -1,0 +1,13 @@
+n=int(input())
+s=input()
+l=s.split()
+l=[int(l[i]) for i in range(0,len(l))]
+c=0
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        if l[j]>l[j+1]:
+            l[j],l[j+1]=l[j+1],l[j]
+            c=c+1
+print("List is sorted in",c,"swaps.")
+print("First Element:",l[0])
+print("Last Element:",l[-1])
