@@ -1,0 +1,31 @@
+def dv(a,b):
+    l=[]
+    for i in a:
+        if a[i]==b:
+            l.append(i)
+    l.sort()
+    for i in l:
+        print(i,end=' ')
+    print()
+n=int(input())
+d1=dict()
+d2=dict()
+d3=dict()
+for i in range(0,n):
+    s=input()
+    z=s.split()
+    d1[z[0]]=int(z[1])+int(z[2])+int(z[3])
+    d2[z[0]]=int(z[2])
+    d3[z[0]]=int(z[3])
+    
+l1=list(d1.values())
+max1=max(l1)
+min1=min(l1)
+l2=list(d2.values())
+max2=max(l2)
+l3=list(d3.values())
+min3=min(l3)
+dv(d1,max1)
+dv(d2,max2)
+dv(d3,min3)
+dv(d1,min1)
