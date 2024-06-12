@@ -1,0 +1,24 @@
+l=[]
+s=input()
+c=0
+n=len(s)
+for i in s:
+    l.append(i)
+z=[]
+#print(l)
+for i in range(len(l)-1,-1,-1):
+    if l[i].isalpha()==True:
+        z.append(l[i])
+        c=c+1
+c=n-c
+#print(z)
+for i in range(0,c):
+    z.append(0)
+
+for i in range(0,len(s)):
+    if l[i].isalnum()==False:
+        z.insert(i,l[i])
+#print(z)    
+for i in z:
+    if i!=0:
+        print(i,end='')
