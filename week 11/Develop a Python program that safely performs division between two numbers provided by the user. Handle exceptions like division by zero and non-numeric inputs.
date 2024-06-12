@@ -1,0 +1,11 @@
+#Division Exception
+try:
+    a=float(input())
+    b=float(input())
+    c=a/b
+except ValueError:
+    print("Error: Non-numeric input provided.")
+except ZeroDivisionError:
+    print("Error: Cannot divide or modulo by zero.")
+else:
+    print(a/b)
