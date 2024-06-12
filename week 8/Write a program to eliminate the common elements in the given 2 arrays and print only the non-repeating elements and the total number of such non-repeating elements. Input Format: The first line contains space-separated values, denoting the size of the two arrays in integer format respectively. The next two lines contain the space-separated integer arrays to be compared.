@@ -1,0 +1,22 @@
+#non repeating
+a=input()
+b=input()
+c=input()
+z1=b.split()
+z2=c.split()
+z=z1+z2
+#print(z)
+d=0
+l=[]
+for i in z:
+    c=0
+    if i in z2 and i in z1:
+        c=1
+    if c==0 and i not in l:
+        print(i,end=' ')
+        l.append(i)
+        d=d+1
+if len(l)==0:
+    print("NO SUCH ELEMENTS")
+print()
+print(d)
