@@ -1,0 +1,12 @@
+# stable
+n = int(input())
+s = str(n)
+l = len(list(set(s)))
+f = list()
+for i in set(s):
+    f.append(s.count(i))
+
+if f.count(f[0]) == l:
+    print("Stable Number")
+else:
+    print("Unstable Number")
