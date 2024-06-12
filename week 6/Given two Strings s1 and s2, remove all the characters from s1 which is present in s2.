@@ -1,0 +1,8 @@
+s1=input()
+s2=input()
+s=''
+for i in range(0,len(s1)):
+    if s1[i] not in s2:
+        s=s+s1[i]
+        
+print(s)
