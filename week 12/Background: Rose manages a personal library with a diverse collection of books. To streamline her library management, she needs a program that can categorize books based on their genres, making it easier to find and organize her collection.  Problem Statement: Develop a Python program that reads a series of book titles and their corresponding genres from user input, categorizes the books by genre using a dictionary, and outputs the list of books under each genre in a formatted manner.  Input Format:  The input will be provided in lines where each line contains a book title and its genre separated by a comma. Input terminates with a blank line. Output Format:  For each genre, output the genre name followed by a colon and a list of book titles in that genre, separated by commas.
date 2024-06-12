@@ -1,0 +1,19 @@
+d=dict()
+try:
+    while True:
+        a=input()
+    #a=a.split(',')
+        a=a.split(',')
+        if a[1] not in d:
+            d[a[1]]=[a[0]]
+        else:
+            d[a[1]].append(a[0])
+        
+except EOFError:
+    for i in d:
+        print(i.strip(),':',sep='',end=' ')
+        j=-1
+        for j in range(0,len(d[i])-1):
+            print(d[i][j],end=', ')
+        print(d[i][j+1])
+    #print()'''
