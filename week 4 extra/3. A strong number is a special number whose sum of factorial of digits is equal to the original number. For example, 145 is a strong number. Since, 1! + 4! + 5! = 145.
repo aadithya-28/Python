@@ -1,0 +1,14 @@
+# strong number
+import math
+
+def strong(n):
+    if n == 0:
+        return 0
+    return math.factorial(n % 10) + strong(n // 10)
+
+n = int(input())
+c = strong(n)
+if c == n:
+    print("Yes")
+else:
+    print("No")
