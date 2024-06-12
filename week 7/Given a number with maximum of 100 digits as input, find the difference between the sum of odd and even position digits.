@@ -1,0 +1,10 @@
+def differenceSum(n):
+    e=0
+    o=0
+    s=str(n)
+    for i in range(0,len(s)):
+        if i%2==0:
+            o=o+int(s[i])
+        else:
+            e=e+int(s[i])
+    return (abs(e-o))
