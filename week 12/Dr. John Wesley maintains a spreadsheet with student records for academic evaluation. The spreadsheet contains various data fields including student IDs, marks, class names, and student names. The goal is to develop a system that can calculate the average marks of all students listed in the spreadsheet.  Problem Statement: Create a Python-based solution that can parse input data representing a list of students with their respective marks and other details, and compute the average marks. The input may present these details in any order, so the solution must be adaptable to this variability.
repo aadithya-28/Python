@@ -1,0 +1,17 @@
+n=int(input())
+s=input().split()
+m=0
+#print(s)
+for i in range(0,4):
+    if s[i]=='MARKS':
+        break
+#print(i)
+for j in range(0,n):
+    s1=input().split()
+    #print(s1)
+    m=m+float(s1[i])
+if n==0:
+    print('0.00')
+else:
+    c=m/n
+    print("%.2f"%c)
