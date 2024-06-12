@@ -1,0 +1,16 @@
+#RATING
+n=float(input())
+if(n>0.0 and n<0.4) or (n>0.4 and n<0.6):
+    print("That wasn't a valid rating.")
+    r=-1
+elif(n==0.0):
+    print("Based on that rating, your performance is Unacceptable.")
+    r=0
+elif(n==0.4):
+    r=2400*n
+    print("Based on that rating, your performance is Acceptable.")
+elif(n==0.6):
+    r=2400*n
+    print("Based on that rating, your performance is Meritorious.")
+if (r!=-1):
+    print("You will receive a raise of $%.2f."%r)
