@@ -1,0 +1,25 @@
+#binary search
+s = input().split(',')
+s = [int(i) for i in s]
+n = int(input())
+f = 0
+mid = s[len(s)-1]
+low = s[0]
+high = s[len(s)-1]
+if(mid==n):
+    f=1
+if(f==0):
+    while(low!=mid and high!=mid):
+        if(mid<n):
+            low = s[mid+1]
+            mid = [(low+high)//2]
+        elif(mid>n):
+            high = s[mid-1]
+            mid = [(low+high)//2]
+        else:
+            f = 1
+            break
+if(f==1):
+    print(True)
+else:
+    print(False)
