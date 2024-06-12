@@ -1,0 +1,11 @@
+# profit or loss
+cp = float(input())
+sp = float(input())
+if sp > cp:
+    pl = sp - cp
+    print("Profit amount: Rs. %.2f" % pl)
+elif cp > sp:
+    pl = cp - sp
+    print("Loss amount: Rs. %.2f" % pl)
+else:
+    print("No profit No loss")
