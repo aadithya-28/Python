@@ -1,0 +1,14 @@
+#power of three
+import math
+n=int(input())
+
+i=0
+
+while True:
+    if 3**i==n:
+        print("True")
+        break
+    if 3**i>n:
+        print("False")
+        break
+    i=i+1
