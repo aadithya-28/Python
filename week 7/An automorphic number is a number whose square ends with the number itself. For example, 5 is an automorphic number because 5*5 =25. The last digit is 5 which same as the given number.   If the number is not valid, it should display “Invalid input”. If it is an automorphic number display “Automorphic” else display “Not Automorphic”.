@@ -1,0 +1,7 @@
+
+def automorphic(n):
+    s=n*n
+    p=len(str(n))*10
+    if s%p==n:
+        return "Automorphic"
+    return "Not Automorphic"
