@@ -1,0 +1,12 @@
+s=input()
+l=d=c=0
+for i in s:
+    if i.isalpha()==True:
+        l=l+1
+    elif i.isdigit()==True:
+        d=d+1
+    else:
+        c=c+1
+print(l)
+print(d)
+print(c)
