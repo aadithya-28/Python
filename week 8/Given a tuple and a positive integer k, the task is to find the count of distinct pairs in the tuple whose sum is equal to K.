@@ -1,0 +1,10 @@
+s=input()
+k=int(input())
+z=s.split(',')
+l=[]
+for i in range(0,len(z)):
+    for j in range(i+1,len(z)):
+        if int(z[i])+int(z[j])==k and [z[i],z[j]] not in l and [z[j],z[i]] not in l:
+            l.append([z[i],z[j]])
+            
+print(len(l))
