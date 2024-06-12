@@ -1,0 +1,27 @@
+#peak element
+n=int(input())
+s=input()
+z=s.split()
+l=[]
+
+for i in range(0,n):
+    if i==0:
+        if int(z[i])>int(z[i+1]):
+            l.append(int(z[i]))
+        else:
+            l.append(int(z[i+1]))
+    elif i==n-1:
+        if int(z[i])>int(z[i-1]) and int(z[i]) not in l:
+            l.append(int(z[i]))
+        elif int(z[i])<int(z[i-1]) and int(z[i-1]) not in l:
+            l.append(int(z[i-1]))
+    else:
+        m=int(z[i-1])
+        for j in range(i-1,i+2):
+            if m<int(z[j]):
+                m=int(z[j])
+        if m not in l:
+            l.append(m)
+            
+for i in l:
+    print(i,end=' ')
