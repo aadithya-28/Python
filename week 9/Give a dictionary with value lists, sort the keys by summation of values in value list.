@@ -1,0 +1,17 @@
+n=int(input())
+d=dict()
+
+for j in range(0,n):
+    s=input()
+    z=s.split()
+    d[z[0]]=0
+    for i in range(1,len(z)):
+        d[z[0]]=d[z[0]]+int(z[i])
+
+l=list(d.values())
+l.sort()
+
+for i in l:
+    for j in d:
+        if i==d[j]:
+            print(j,d[j])
