@@ -1,0 +1,19 @@
+n=int(input())
+s=input().split()
+s=[int(i) for i in s]
+r=int(input())
+tc=0
+#l=np.zeroes((r,2))
+l=[]
+for i in range(0,r):
+    a=input().split()
+    a=[int(j) for j in a]
+    l.append(a)
+
+for i in range(0,r):
+    for j in range(0,n):
+        if l[i][0]==s[j]:
+            s[j]=0
+            tc=tc+l[i][1]
+            break
+print(tc)
